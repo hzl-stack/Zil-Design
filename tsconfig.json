@@ -26,10 +26,10 @@
   },
   "include": [
     ".dumirc.ts",
-    "packages/**/*",
+    "**/packages/**/*",
     "docs/**/*",
     "./*.d.ts",
-    "packages/*",
+    "**/packages/*",
     "node_modules/@zil-design"
   ],
   "exclude": [
