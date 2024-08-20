@@ -4,8 +4,13 @@
     "declaration": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
+    "lib": ["dom", "dom.iterable", "esnext"], // 编译过程中需要引入的库文件的列表
+    "allowJs": true, // 允许编译 js 文件
+    "target": "esnext", // 编译成哪个版本的 es
+    "module": "esnext", // 指定生成哪个模块系统代码
+    "rootDir": ".",
     "jsx": "react",
-    "baseUrl": "./",
+    "baseUrl": ".",
     "paths": {
       "@@/*": [".dumi/tmp/*"],
       "@Zil-Design": ["packages/*"],
@@ -18,5 +23,17 @@
     "docs/**/*",
     "./*.d.ts",
     "packages/*"
+  ],
+  "exclude": [
+    "**/sites/**/*",
+    "node_modules",
+    "**/iconfont.js",
+    "**/scripts/**/*",
+    "**/dist/**/*",
+    "**/es/**/*",
+    "**/lib/**/*",
+    "**/stories/**/*",
+    "**/bin/**/*",
+    "**/linters/**/*"
   ]
 }
