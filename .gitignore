@@ -1,0 +1,36 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+.idea
+.git
+.vscode
+.umi
+.umi-production
+.dumi/tmp
+.dumi/tmp-test
+.dumi/tmp-production
+
+# dependencies
+node_modules
+*-debug.log*
+yarn-error.log
+
+# production
+dist
+lib
+es
+/build
+
+# misc
+.DS_Store
+tsconfig.tsbuildinfo
+
+/public/uploads
+docs.json
+
+__snapshots__
+coverage
+
+.bashrc
+.gitconfig
+.gnupg
+.profile

@@ -1,0 +1,39 @@
+{
+  "packages": ["packages/**/"],
+  "version": "independent",
+  "useWorkspaces": true,
+  "npmClient": "yarn",
+  "command": {
+    "bootstrap": {
+      "hoist": true
+    },
+    "publish": {
+      "ignoreChanges": [
+        "*.md",
+        ".npmrc",
+        ".gitconfig",
+        ".bashrc",
+        ".gnupg/*",
+        ".gnupg/**/*",
+        ".profile"
+      ],
+      "conventionalCommits": true,
+      "message": "chore: lerna publish",
+      "registry": "https://registry.npmjs.org/"
+    },
+    "version": {
+      "allowBranch": [
+        "master",
+        "next",
+        "v1.x",
+        "v2.x",
+        "v3.x",
+        "release/*",
+        "cip-mkt"
+      ],
+      "includeMergedTags": true,
+      "conventionalCommits": true,
+      "message": "chore: lerna version"
+    }
+  }
+}
