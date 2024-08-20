@@ -11,18 +11,25 @@
     "rootDir": ".",
     "jsx": "react",
     "baseUrl": ".",
+    "resolveJsonModule": true, // 支持导入 json 模块
+    "noImplicitAny": true, // 不允许有隐式any类型
+    "preserveConstEnums": true, // 保留常量枚举
+    "removeComments": false, // 移除注释
     "paths": {
       "@@/*": [".dumi/tmp/*"],
       "@Zil-Design": ["packages/*"],
       "@Zil-Design/*": ["packages/*", "*"]
-    }
+    },
+    "allowSyntheticDefaultImports": true, // 允许从没有设置默认导出的模块中默认导入
+    "noEmit": false // 使用father-build这里需要生成的文件
   },
   "include": [
     ".dumirc.ts",
     "packages/**/*",
     "docs/**/*",
     "./*.d.ts",
-    "packages/*"
+    "packages/*",
+    "/packages/wrap-antd/wrap-antd/*"
   ],
   "exclude": [
     "**/sites/**/*",

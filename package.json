@@ -34,6 +34,7 @@
     "prepare": "husky install && dumi setup",
     "prepublishOnly": "father doctor && npm run build",
     "pub": "lerna publish from-git",
+    "pub-package": "lerna publish from-package",
     "start": "npm run dev",
     "version:major": "lerna version major --no-private",
     "version:minor": "lerna version minor --no-private",
