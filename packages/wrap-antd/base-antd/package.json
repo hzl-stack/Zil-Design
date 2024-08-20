@@ -14,6 +14,7 @@
   ],
   "scripts": {
     "build": "node scripts/copyAntd",
+    "clean": "rimraf lib es dist && rimraf tsconfig.build.tsbuildinfo",
     "clean:antd": "rimraf lib es dist && rimraf tsconfig.build.tsbuildinfo",
     "link": "yarn link",
     "prepublishOnly": "yarn clean:antd && yarn build"
@@ -30,5 +31,5 @@
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
-  "gitHead": "5836b4f7afb7b9c6e779ac404915dadfccba013c"
+  "gitHead": "43103501f472e10170ee6f9f9f5385a9d92849bd"
 }

@@ -22,6 +22,7 @@
       "@Zil-Design": ["packages/*"],
       "@Zil-Design/*": ["packages/*", "*"]
     },
+    "outDir": "dist",
 
     // 实验性选项
     "experimentalDecorators": true, // 启用实验性的ES装饰器
@@ -29,7 +30,7 @@
     "allowSyntheticDefaultImports": true, // 允许从没有设置默认导出的模块中默认导入
     "noEmit": false // 使用father-build这里需要生成的文件
   },
-  "include": [".dumirc.ts", "packages/**/*", "docs/**/*", "./*.d.ts"],
+  "include": ["packages/**/*", "docs/**/*", "./*.d.ts"],
   "exclude": [
     "**/sites/**/*",
     "node_modules",
