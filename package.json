@@ -24,6 +24,8 @@
   "scripts": {
     "build": "father build",
     "build:watch": "father dev",
+    "clean": "rimraf node_modules yarn.lock && lerna clean",
+    "clean:dist": "lerna run clean --no-private",
     "compile:all": "yarn clean:dist && lerna run build --no-private",
     "dev": "dumi dev",
     "docs:build": "dumi build",

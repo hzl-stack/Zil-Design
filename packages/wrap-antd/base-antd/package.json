@@ -16,7 +16,8 @@
     "package.json"
   ],
   "scripts": {
-    "build": "father build --config=../../.fatherrc.ts",
+    "build": "node scripts/copyAntd",
+    "prepublishOnly": "yarn clean && yarn build",
     "clean": "rimraf lib es dist && rimraf tsconfig.build.tsbuildinfo",
     "link": "yarn link"
   },
