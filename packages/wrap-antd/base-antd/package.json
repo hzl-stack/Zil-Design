@@ -1,0 +1,35 @@
+{
+  "name": "@zil-design/base-antd",
+  "version": "0.0.0",
+  "license": "UNLICENSED",
+  "author": "HuZili",
+  "main": "es/index.js",
+  "module": "es/index.js",
+  "browser": "src/index.ts",
+  "types": "src/index.ts",
+  "files": [
+    "lib",
+    "es",
+    "src",
+    "dist",
+    "README.md",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "father build --config=../../.fatherrc.ts",
+    "clean": "rimraf lib es dist && rimraf tsconfig.build.tsbuildinfo",
+    "link": "yarn link"
+  },
+  "dependencies": {
+    "antd": "5.20.2"
+  },
+  "peerDependencies": {
+    "dva": "^2.4.1",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

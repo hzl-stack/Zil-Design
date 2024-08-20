@@ -8,8 +8,8 @@
     "baseUrl": "./",
     "paths": {
       "@@/*": [".dumi/tmp/*"],
-      "Zil-Design": ["src"],
-      "Zil-Design/*": ["src/*", "*"]
+      "@Zil-Design": ["packages/**/*"],
+      "@Zil-Design/*": ["packages/**/*", "*"]
     }
   },
   "include": [".dumirc.ts", "src/**/*"]

@@ -3,6 +3,12 @@
   "version": "0.0.1",
   "private": true,
   "description": "React library by hzl",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hzl-stack/Zil-Design.git",
+    "branch": "master",
+    "platform": "github"
+  },
   "license": "MIT",
   "sideEffects": [
     "*.less"
@@ -13,7 +19,7 @@
     "dist"
   ],
   "workspaces": [
-    "packages/*"
+    "packages/**/*"
   ],
   "scripts": {
     "build": "father build",
