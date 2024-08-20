@@ -5,13 +5,30 @@
 
 React library by hzl
 
+# Attention:
+
+lerna 使用 8.1.8 版本,不需要设置 useWorkspaces 选项,否则报错,https://github.com/flexn-io/renative/issues/1240
+
 ## Usage
 
-TODO
+```bash
+# 启动本地开发调试
+yarn start
+
+# 更新修订版本号
+yarn version:patch
+
+# 更新修订版本号
+yarn version:minor
+
+# 更新修订版本号
+yarn version:major
+
+# 推送到npm仓库
+yarn pub
+```
 
 ## Options
-
-TODO
 
 ## Development
 
