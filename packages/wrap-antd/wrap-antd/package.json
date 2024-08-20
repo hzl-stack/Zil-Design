@@ -1,0 +1,40 @@
+{
+  "name": "@zil-design/wrap-antd",
+  "version": "0.0.2",
+  "license": "UNLICENSED",
+  "author": "HuZili",
+  "main": "es/index.js",
+  "module": "es/index.js",
+  "browser": "src/index.ts",
+  "types": "src/index.ts",
+  "files": [
+    "lib",
+    "es",
+    "src",
+    "dist",
+    "README.md",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "father build",
+    "postbuild": "node scripts/copyLess && node scripts/updatePackagesList",
+    "clean": "rimraf lib es dist && rimraf tsconfig.build.tsbuildinfo",
+    "link": "yarn link",
+    "prepublishOnly": "yarn clean && yarn build",
+    "updatePackagesList": "node scripts/updatePackagesList"
+  },
+  "dependencies": {
+    "antd": "5.20.2"
+  },
+  "peerDependencies": {
+    "dva": "^2.4.1",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/",
+    "tag": "next"
+  },
+  "gitHead": "88aa6f406b12716caa635556cd532ea7864681f2"
+}
