@@ -1,6 +1,6 @@
 {
   "name": "@zil-design/base-antd",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "UNLICENSED",
   "author": "HuZili",
   "main": "es/index.js",
@@ -17,9 +17,9 @@
   ],
   "scripts": {
     "build": "node scripts/copyAntd",
-    "prepublishOnly": "yarn clean && yarn build",
     "clean": "rimraf lib es dist && rimraf tsconfig.build.tsbuildinfo",
-    "link": "yarn link"
+    "link": "yarn link",
+    "prepublishOnly": "yarn clean && yarn build"
   },
   "dependencies": {
     "antd": "5.20.2"
