@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.5](https://github.com/hzl-stack/Zil-Design/compare/@zil-design/base-antd@0.0.4...@zil-design/base-antd@0.0.5) (2024-08-20)
+
+### Bug Fixes
+
+- babel 配置 ([4b35320](https://github.com/hzl-stack/Zil-Design/commit/4b35320d8e8d96586cdc5e2972fea6fa66b79066))
+- tsconfig 修改 ([4310350](https://github.com/hzl-stack/Zil-Design/commit/43103501f472e10170ee6f9f9f5385a9d92849bd))
+
 ## [0.0.4](https://github.com/hzl-stack/Zil-Design/compare/@zil-design/base-antd@0.0.3...@zil-design/base-antd@0.0.4) (2024-08-20)
 
 ### Bug Fixes
