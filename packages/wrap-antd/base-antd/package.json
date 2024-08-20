@@ -5,21 +5,18 @@
   "author": "HuZili",
   "main": "es/index.js",
   "module": "es/index.js",
-  "browser": "src/index.ts",
-  "types": "src/index.ts",
+  "typings": "es/index.d.ts",
   "files": [
     "lib",
     "es",
-    "src",
-    "dist",
     "README.md",
     "package.json"
   ],
   "scripts": {
     "build": "node scripts/copyAntd",
-    "clean": "rimraf lib es dist && rimraf tsconfig.build.tsbuildinfo",
+    "clean:antd": "rimraf lib es dist && rimraf tsconfig.build.tsbuildinfo",
     "link": "yarn link",
-    "prepublishOnly": "yarn clean && yarn build"
+    "prepublishOnly": "yarn clean:antd && yarn build"
   },
   "dependencies": {
     "antd": "5.20.2"
@@ -33,5 +30,5 @@
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
-  "gitHead": "aad8fa06e0a4a12b2f06606cb2a11b89de129ab8"
+  "gitHead": "98f5c090e100478a5def4ead8458cb29a1cf905c"
 }

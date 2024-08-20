@@ -16,11 +16,16 @@
     "noImplicitAny": true, // 不允许有隐式any类型
     "preserveConstEnums": true, // 保留常量枚举
     "removeComments": false, // 移除注释
+    "forceConsistentCasingInFileNames": true, // 禁止对同一个文件的不一致的引用
     "paths": {
       "@@/*": [".dumi/tmp/*"],
       "@Zil-Design": ["packages/*"],
       "@Zil-Design/*": ["packages/*", "*"]
     },
+
+    // 实验性选项
+    "experimentalDecorators": true, // 启用实验性的ES装饰器
+    "emitDecoratorMetadata": true, // 给源码里的装饰器声明加上设计类型元数据
     "allowSyntheticDefaultImports": true, // 允许从没有设置默认导出的模块中默认导入
     "noEmit": false // 使用father-build这里需要生成的文件
   },
@@ -29,8 +34,7 @@
     "**/packages/**/*",
     "docs/**/*",
     "./*.d.ts",
-    "**/packages/*",
-    "node_modules/@zil-design"
+    "**/packages/*"
   ],
   "exclude": [
     "**/sites/**/*",
