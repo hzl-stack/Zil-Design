@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.7](https://github.com/hzl-stack/Zil-Design/compare/@zil-design/wrap-antd@0.0.6...@zil-design/wrap-antd@0.0.7) (2024-08-20)
+
+### Bug Fixes
+
+- father 报错问题修复 ([4cd85bf](https://github.com/hzl-stack/Zil-Design/commit/4cd85bf5abf0a42f5420f05d7194aa864d2d723f))
+
 ## [0.0.6](https://github.com/hzl-stack/Zil-Design/compare/@zil-design/wrap-antd@0.0.5...@zil-design/wrap-antd@0.0.6) (2024-08-20)
 
 ### Bug Fixes
