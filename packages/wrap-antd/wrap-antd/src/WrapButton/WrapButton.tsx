@@ -1,4 +1,4 @@
-import { Button } from '@Zil-Design/node_modules/antd/es/index';
+import { Button } from '@zil-design/base-antd';
 import React, { ReactNode } from 'react';
 
 interface IWrapButtonProps {

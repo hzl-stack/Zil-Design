@@ -1,7 +1,7 @@
 {
   "name": "zil-design",
   "version": "0.0.1",
-  "private": false,
+  "private": true,
   "description": "React library by hzl",
   "repository": {
     "type": "git",

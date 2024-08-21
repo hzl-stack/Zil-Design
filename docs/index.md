@@ -1,6 +1,6 @@
 ---
 hero:
-  title: library
+  title: Zil-library
   description: React library by hzl
   actions:
     - text: Hello

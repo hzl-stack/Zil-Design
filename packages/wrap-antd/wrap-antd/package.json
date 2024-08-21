@@ -21,7 +21,7 @@
     "link": "yarn link"
   },
   "dependencies": {
-    "antd": "5.20.2"
+    "@zil-design/base-antd": "^0.0.6"
   },
   "peerDependencies": {
     "dva": "^2.4.1",
