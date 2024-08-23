@@ -18,6 +18,12 @@ const DragButton = (props: IDragButtonProps) => {
         ...(visible ? {} : { visibility: 'hidden' }),
       }}
       className={classNames('zil-drag-button-per-svg-container', className)}
+      onDragEnd={(e) => {
+        e.stopPropagation();
+      }}
+      onDragEnter={(e) => {
+        e.stopPropagation();
+      }}
     >
       <img src={dragPer} alt="" draggable={false} />
       <img src={dragPer} alt="" draggable={false} />

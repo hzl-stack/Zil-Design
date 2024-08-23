@@ -1,33 +1,63 @@
-// import { useUpdateEffect } from '@zil-design/zil-sdk';
+import { useUpdateEffect } from '@zil-design/zil-sdk';
 import classNames from 'classnames';
 import { cloneDeep } from 'lodash';
 import React, { ReactNode, useRef, useState } from 'react';
+import trash from './assets/trash.svg';
 import DragButton from './components/DragButton';
 import './style.less';
 
-interface IDragGroupValueEnumProps {
+export interface IDragGroupValueEnumProps {
+  /**
+   * 按钮文本
+   */
   label?: string | number | ReactNode;
+  /**
+   * 按钮唯一标识
+   */
   value: string | number | Record<any, any> | undefined;
+  /**
+   * 是否可以拖拽
+   * @default true
+   */
   isDraggable?: boolean;
+  /**
+   * 是否可以删除
+   * @default true
+   */
+  allowDelete?: boolean;
 }
 
-interface IDragGroupProps {
+export interface IDragGroupProps {
+  /**
+   * 初始值
+   */
   initValueEnum: IDragGroupValueEnumProps[];
+  /**
+   * 类名
+   */
   className?: string;
+  /**
+   * 样式
+   */
   style?: React.CSSProperties;
+  /**
+   * 拖动、删除等操作的回调事件，回调参数为变化后的值
+   * @param v
+   * @returns
+   */
   onChange?: (v: IDragGroupValueEnumProps[]) => void;
 }
 
 const DragGroup = (props: IDragGroupProps) => {
-  const { initValueEnum, className, style } = props;
+  const { initValueEnum, className, style, onChange } = props;
   const [changeValueEnum, setChangeValueEnum] = useState(initValueEnum);
 
   const sourceKey = useRef();
   const targetKey = useRef();
 
-  // useUpdateEffect(() => {
-  //   onChange?.(changeValueEnum);
-  // }, [changeValueEnum]);
+  useUpdateEffect(() => {
+    onChange?.(changeValueEnum);
+  }, [changeValueEnum]);
 
   return (
     <div
@@ -50,8 +80,6 @@ const DragGroup = (props: IDragGroupProps) => {
           ?.map((_) => _.value)
           ?.indexOf(targetKey.current);
 
-        console.log(sourceIndex, targetIndex, targetKey);
-
         if (
           sourceIndex !== -1 &&
           targetIndex !== -1 &&
@@ -63,7 +91,6 @@ const DragGroup = (props: IDragGroupProps) => {
           cloneValue[sourceIndex] = cloneValue[targetIndex];
           cloneValue[targetIndex] = temp;
           setChangeValueEnum(cloneValue);
-          console.log(changeValueEnum);
         }
       }}
     >
@@ -79,9 +106,40 @@ const DragGroup = (props: IDragGroupProps) => {
             }}
           >
             <DragButton visible={record.isDraggable} />
-            <div className="zil-drag-group-button-text">
-              <div>{record?.label}</div>
-              <div />
+            <div
+              className="zil-drag-group-button-text"
+              onDragEnd={(e) => {
+                e.stopPropagation();
+              }}
+              onDragEnter={(e) => {
+                e.stopPropagation();
+              }}
+            >
+              <div
+                onDragEnd={(e) => {
+                  e.stopPropagation();
+                }}
+                onDragEnter={(e) => {
+                  e.stopPropagation();
+                }}
+              >
+                {record?.label}
+              </div>
+              {record?.allowDelete !== false && (
+                <div
+                  className="zil-drag-group-delete-button"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setChangeValueEnum(
+                      changeValueEnum?.filter(
+                        (cur) => cur.value !== record.value,
+                      ),
+                    );
+                  }}
+                >
+                  <img src={trash} alt="" />
+                </div>
+              )}
             </div>
           </div>
         );
