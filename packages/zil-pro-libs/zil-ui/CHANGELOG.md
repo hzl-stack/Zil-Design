@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.3](https://github.com/hzl-stack/Zil-Design/compare/@zil-design/zil-ui@0.0.2...@zil-design/zil-ui@0.0.3) (2024-08-23)
+
+### Features
+
+- 拖拽组件优化 ([7ec4b4d](https://github.com/hzl-stack/Zil-Design/commit/7ec4b4d5bc90919bc4d52d862d7df52b09cdb9e6))
+
 ## [0.0.2](https://github.com/hzl-stack/Zil-Design/compare/@zil-design/zil-ui@0.0.1...@zil-design/zil-ui@0.0.2) (2024-08-23)
 
 ### Features
