@@ -1,7 +1,7 @@
 # Zil-Design
 
-[![NPM version](https://img.shields.io/npm/v/Zil-Design.svg?style=flat)](https://npmjs.org/package/Zil-Design)
-[![NPM downloads](http://img.shields.io/npm/dm/Zil-Design.svg?style=flat)](https://npmjs.org/package/Zil-Design)
+[![NPM version](https://img.shields.io/npm/v/Zil-Design.svg?style=flat)](https://www.npmjs.com/package/@zil-design/zil-ui)
+[![NPM downloads](http://img.shields.io/npm/dm/Zil-Design.svg?style=flat)](https://www.npmjs.com/package/@zil-design/zil-ui)
 
 React library by hzl
 
