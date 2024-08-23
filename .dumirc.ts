@@ -3,7 +3,16 @@ import { defineConfig } from 'dumi';
 import path from 'path';
 import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin';
 
+let useParser: any = {
+  apiParser: {},
+  resolve: {
+    entryFile: './docs/doc_entries.tsx',
+  },
+};
+
 export default defineConfig({
+  ...useParser,
+  svgr: {},
   outputPath: 'docs-dist',
   themeConfig: {
     name: 'Zil-Design',

@@ -7,9 +7,17 @@
   font-weight: 400;
   font-size: 14px;
 
+  .@{prefix}-drag-group-delete-button {
+    display: none;
+  }
+
   :hover {
     background-color: #e6f3fa;
     cursor: pointer;
+
+    .@{prefix}-drag-group-delete-button {
+      display: block;
+    }
   }
 
   .@{prefix}-drag-group-button {
