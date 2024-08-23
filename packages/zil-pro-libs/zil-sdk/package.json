@@ -1,6 +1,6 @@
 {
   "name": "@zil-design/zil-sdk",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "UNLICENSED",
   "author": "HuZili",
   "main": "es/index.js",
@@ -20,7 +20,6 @@
     "clean": "rimraf lib es dist && rimraf tsconfig.build.tsbuildinfo",
     "link": "yarn link"
   },
-  "dependencies": {},
   "peerDependencies": {
     "dva": "^2.4.1",
     "react": ">=16.8.0",
