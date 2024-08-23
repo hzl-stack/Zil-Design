@@ -1,0 +1,28 @@
+{
+  "name": "@zil-design/less-plugin-functions",
+  "version": "0.0.0",
+  "description": "write custom Less functions in Less itself",
+  "keywords": [
+    "less",
+    "less.js",
+    "lesscss",
+    "less plugin",
+    "less functions"
+  ],
+  "homepage": "https://github.com/seven-phases-max/less-plugin-functions",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/seven-phases-max/less-plugin-functions.git"
+  },
+  "license": "MIT",
+  "author": "Max Mikhailov",
+  "main": "src/index.js",
+  "types": "src/index.ts",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

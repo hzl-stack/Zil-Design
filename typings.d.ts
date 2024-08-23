@@ -26,25 +26,25 @@ declare module '*.md' {
   export default content;
 }
 
-declare global {
-  interface Window {
-    businessConfig: {
-      platformBaseURL?: string;
-      baseURL?: string;
-      headers?: Record<string, any>;
-      aliossURL?: string;
-      minioOssURL?: string;
-      [key: string]: unknown;
-    };
-    token: string;
-    user: {
-      id: number;
-      localeLanguageCode: string;
-    };
-  }
-}
+// declare global {
+//   interface Window {
+//     businessConfig: {
+//       platformBaseURL?: string;
+//       baseURL?: string;
+//       headers?: Record<string, any>;
+//       aliossURL?: string;
+//       minioOssURL?: string;
+//       [key: string]: unknown;
+//     };
+//     token: string;
+//     user: {
+//       id: number;
+//       localeLanguageCode: string;
+//     };
+//   }
+// }
 
-declare const PLATFORM_URL: string;
+// declare const PLATFORM_URL: string;
 
 // interface Window {
 //   token: string;

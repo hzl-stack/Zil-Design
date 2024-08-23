@@ -1,3 +1,27 @@
-.container {
-  display: 'flex';
+@prefix: zil;
+
+.@{prefix}-drag-group-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+
+  :hover {
+    background-color: #e6f3fa;
+    cursor: pointer;
+  }
+
+  .@{prefix}-drag-group-button {
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+
+    .@{prefix}-drag-group-button-text {
+      padding-left: 8px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 }
