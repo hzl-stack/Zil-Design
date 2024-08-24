@@ -11,8 +11,10 @@ lerna 使用 8.1.8 版本,不需要设置 useWorkspaces 选项,否则报错,http
 
 ## Usage
 
+组件库采用 monorepo 结构，有多个组件包，wrap-antd 包主要对 ant-design 组件库进行二次封装，wrap-semi 主要对 semi 进行二次封装，zil-pro-libs 主要是一些 hooks、个人编写的组件等，out-lib 为出口包
+
 ```bash
-# 启动本地开发调试
+# 启动本地开发调试 文档调试
 yarn start
 
 # 更新修订版本号
