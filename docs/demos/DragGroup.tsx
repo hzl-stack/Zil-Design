@@ -18,11 +18,15 @@ const DragGroupDemo = () => {
           { label: '乒乓球', value: 'table-tennis', allowDelete: false },
         ]}
         onChange={(v) => {
-          setValue(JSON.stringify(v));
+          setValue(JSON.stringify(v, null, 2));
         }}
       />
       <br />
-      <div>此处为拖拽后的值：{value}</div>
+      <pre style={{ fontSize: 14, fontWeight: 400 }}>
+        <div style={{ fontWeight: 'bold' }}>此处为拖拽后的值：</div>
+        <br />
+        {value}
+      </pre>
     </>
   );
 };
