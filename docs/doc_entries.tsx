@@ -5,6 +5,8 @@ import {
 import React from 'react';
 
 export function DragGroup(props: IDragGroupProps) {
+  console.log('DragGroup', props);
+
   return <div>{JSON.stringify(props)}</div>;
 }
 

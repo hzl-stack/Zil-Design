@@ -21,8 +21,18 @@ group:
 
 ### IDragGroupProps
 
-<API id="DragGroup"></API>
+| 属性名        | 描述     | 类型                                       | 默认值 |
+| ------------- | -------- | ------------------------------------------ | ------ |
+| initValueEnum | 初始的值 | `IDragGroupValueEnumProps[]`               | []     |
+| className     | 类名     | `string`                                   |
+| style         | 样式     | `React.CSSProperties`                      |
+| onChange      | 回调函数 | `(v: IDragGroupValueEnumProps[]) => void;` |
 
 ### IDragGroupValueEnumProps
 
-<API id="DragGroupValueEnum"></API>
+| 属性名      | 描述         | 类型                                                      | 默认值 |
+| ----------- | ------------ | --------------------------------------------------------- | ------ |
+| label       | 按钮文本     | `string` \| `number` \| `ReactNode`                       |        |
+| value       | 按钮唯一标识 | `string` \| `number` \| `Record<any, any>` \| `undefined` |
+| isDraggable | 是否可以拖拽 | `boolean`                                                 | true   |
+| allowDelete | 是否可以删除 | `boolean`                                                 | true   |
