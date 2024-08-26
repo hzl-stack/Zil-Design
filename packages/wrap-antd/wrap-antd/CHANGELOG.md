@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.10](https://github.com/hzl-stack/Zil-Design/compare/@zil-design/wrap-antd@0.0.9...@zil-design/wrap-antd@0.0.10) (2024-08-26)
+
+### Features
+
+- out-lib 包 ([8b3e2f2](https://github.com/hzl-stack/Zil-Design/commit/8b3e2f272d460be70ec845d080228ab995609087))
+
 ## [0.0.9](https://github.com/hzl-stack/Zil-Design/compare/@zil-design/wrap-antd@0.0.8...@zil-design/wrap-antd@0.0.9) (2024-08-23)
 
 ### Features

@@ -1,6 +1,6 @@
 {
   "name": "@zil-design/zil-ui",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "license": "UNLICENSED",
   "author": "HuZili",
   "main": "es/index.js",
@@ -21,7 +21,7 @@
     "link": "yarn link"
   },
   "dependencies": {
-    "@zil-design/wrap-antd": "^0.0.9",
+    "@zil-design/wrap-antd": "^0.0.10",
     "@zil-design/zil-sdk": "latest",
     "classnames": "^2.5.1",
     "lodash": "^4.17.21"
