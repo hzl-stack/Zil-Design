@@ -1,6 +1,6 @@
 {
   "name": "@zil-design/out-lib",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "UNLICENSED",
   "author": "HuZili",
   "main": "es/index.js",
@@ -23,7 +23,6 @@
   "dependencies": {
     "@zil-design/zil-ui": "latest"
   },
-  "devDependencies": {},
   "peerDependencies": {
     "dva": "^2.4.1",
     "react": ">=16.8.0",
