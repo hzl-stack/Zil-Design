@@ -21,6 +21,7 @@
     "link": "yarn link"
   },
   "dependencies": {
+    "@zil-design/wrap-antd": "latest",
     "@zil-design/zil-ui": "latest"
   },
   "peerDependencies": {

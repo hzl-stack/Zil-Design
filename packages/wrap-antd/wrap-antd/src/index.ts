@@ -1,1 +1,3 @@
-export * from './WrapButton';
+import WrapButton from './WrapButton';
+
+export { WrapButton };
