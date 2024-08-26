@@ -4197,10 +4197,24 @@
     js-yaml "^3.10.0"
     tslib "^2.4.0"
 
+"@zil-design/wrap-antd@latest":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@zil-design/wrap-antd/-/wrap-antd-0.0.7.tgz#d9f9126128aa2f930ca89663f6440518cf2aedb6"
+  integrity sha512-tB1p5FGg0s/M2c7p2rMHsHRWkws0YkulAoixLIJYtnxsMgsVyvVyid7B7pbnHEpX4XkvRWPmRj6T9/2ziRi2SQ==
+  dependencies:
+    antd "5.20.2"
+
 "@zil-design/zil-sdk@latest":
   version "0.0.1"
   resolved "https://registry.npmjs.org/@zil-design/zil-sdk/-/zil-sdk-0.0.1.tgz#7327aeaa056f7f29a2b6cf5b3dcbdf14902073a2"
   integrity sha512-cg+OvETjBF1OpXKNnInjhLbGF1HvOZPMspPPVo6Vo+NL09F7GQr89Vfhx9WCO026YzQsTdQGv638e9pnFbZjtA==
+
+"@zil-design/zil-ui@latest":
+  version "0.0.1"
+  resolved "https://registry.npmmirror.com/@zil-design/zil-ui/-/zil-ui-0.0.1.tgz#564094ec34f3c2564613437226576c338775d657"
+  integrity sha512-DA9pSvt/EJtY1CDgz2sgxCeMfSuRCTwq541mHHijST5fFMeWqWFEdH1XzajYVKuEF9TjVWLWKC+mCw/wVeeMcw==
+  dependencies:
+    "@zil-design/wrap-antd" latest
 
 "@zkochan/js-yaml@0.0.7":
   version "0.0.7"
