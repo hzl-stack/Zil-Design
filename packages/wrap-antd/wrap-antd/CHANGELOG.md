@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.11](https://github.com/hzl-stack/Zil-Design/compare/@zil-design/wrap-antd@0.0.10...@zil-design/wrap-antd@0.0.11) (2024-08-29)
+
+**Note:** Version bump only for package @zil-design/wrap-antd
+
 ## [0.0.10](https://github.com/hzl-stack/Zil-Design/compare/@zil-design/wrap-antd@0.0.9...@zil-design/wrap-antd@0.0.10) (2024-08-26)
 
 ### Features

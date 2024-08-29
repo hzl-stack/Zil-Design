@@ -1,6 +1,6 @@
 {
   "name": "@zil-design/less-plugin-functions",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "write custom Less functions in Less itself",
   "keywords": [
     "less",
