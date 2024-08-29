@@ -1,4 +1,4 @@
-# @g3-cscec/less-plugin-functions
+# @zil-design/less-plugin-functions
 
 [less-plugin-functions](https://github.com/seven-phases-max/less-plugin-functions)的复制版本，无须编译，一般也不需要改动
 
