@@ -3,6 +3,7 @@
   "version": "0.0.4",
   "license": "UNLICENSED",
   "author": "HuZili",
+  "sideEffects": true,
   "main": "es/index.js",
   "module": "es/index.js",
   "browser": "src/index.ts",
@@ -13,7 +14,8 @@
     "src",
     "dist",
     "README.md",
-    "package.json"
+    "package.json",
+    "bin"
   ],
   "scripts": {
     "build": "father build",
