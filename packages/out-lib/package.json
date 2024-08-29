@@ -17,11 +17,15 @@
   ],
   "scripts": {
     "build": "father build",
+    "postbuild": "node scripts/copyLess && node scripts/updatePackagesList",
     "clean": "rimraf lib es dist && rimraf tsconfig.build.tsbuildinfo",
-    "link": "yarn link"
+    "link": "yarn link",
+    "prepublishOnly": "yarn clean && yarn build",
+    "updatePackagesList": "node scripts/updatePackagesList"
   },
   "dependencies": {
     "@zil-design/wrap-antd": "latest",
+    "@zil-design/zil-sdk": "latest",
     "@zil-design/zil-ui": "latest"
   },
   "peerDependencies": {

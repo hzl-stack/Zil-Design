@@ -8,3 +8,8 @@ import { ZilDragGroup } from '@zil-design/zil-ui';
  */
 
 export { ZilDragGroup };
+
+/**
+ * sdk包
+ */
+export * from '@zil-design/zil-sdk';
