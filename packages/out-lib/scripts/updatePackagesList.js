@@ -57,5 +57,7 @@ try {
     JSON.stringify(allPackages, null, 2),
   );
 } catch (error) {
+  console.log(__dirname);
+
   console.log('write packages error', error);
 }
