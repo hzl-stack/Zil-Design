@@ -1,5 +1,5 @@
 /**
- * 遍历并寻找所有的packages,并加入allPackages并写入es/packagelist.json，以前在别的项目link需要在package.json中手动指定,现在直接执行g3 link --all即可
+ * 遍历并寻找所有的packages,并加入allPackages并写入es/packagelist.json，以前在别的项目link需要在package.json中手动指定,现在直接执行zil link --all即可
  */
 const fs = require('fs-extra');
 const path = require('path');
