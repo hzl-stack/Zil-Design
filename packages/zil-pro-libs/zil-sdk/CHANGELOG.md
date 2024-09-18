@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.4](https://github.com/hzl-stack/Zil-Design/compare/@zil-design/zil-sdk@0.0.3...@zil-design/zil-sdk@0.0.4) (2024-09-18)
+
+### Features
+
+- 增加最小堆数据结构 ([bb3e77a](https://github.com/hzl-stack/Zil-Design/commit/bb3e77a85df7b7b5c90c3e0558189ab537b1ea3b))
+
 ## [0.0.3](https://github.com/hzl-stack/Zil-Design/compare/@zil-design/zil-sdk@0.0.2...@zil-design/zil-sdk@0.0.3) (2024-08-29)
 
 **Note:** Version bump only for package @zil-design/zil-sdk
